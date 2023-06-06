@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>Chooeatcenter</title>
+    <meta charset="utf-8" />
+    <link href="./images/header/logo2.png" rel="shortcut icon">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- 引入bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- 引入Font Awesome 套件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- 以下引入我們自己寫的css -->
+    <link rel="stylesheet" href="./styles/header/footer.css" />
+    <link rel="stylesheet" href="./styles/header/header.css" />
+    <link rel="stylesheet" href="./styles/all/all.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/usercenter.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <!-- 設定導覽列標籤在桌機以上size展開 -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <!-- div class="container-fluid"置中且滿版 -->
+            <div class="container">
+                <!-- .navbar-brand 標示為公司，產品或專案名稱。
+              這裡放的是chooeat文字logo
+                      這裡的連結之後要改，跳轉到首頁
+                  內包超連結，超連結裡面包圖片，讓使用者點圖片跳轉 -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/header/logo.png" />
+                </a>
+                <!-- order-lg-last在bootstrap框架中是設定在父元素的排列順序，last的意思是會在最後面
+                      function_icons只代表這個class的名稱 -->
+                <div class="function_icons order-lg-last">
+                    <!-- "mb-0" 類用於指定此元素的外邊距（margin）為 0。 
+                      "d-flex" 類用於指定此元素為一個彈性盒子，即在此元素內部的所有子元素將以一個方向排列
+                      ，並且可以通過 justify-content 和 align-items 屬性來調整它們之間的間距和位置。 -->
+                    <p class="mb-0 d-flex">
+                        <!-- "d-flex" 類用於指定此元素為一個彈性盒子，它將允許 "align-items-center" 
+                              和 "justify-content-center" 屬性來垂直和水平居中其內部的子元素。 
+                              "align-items-center" 類用於垂直居中，"justify-content-center" 類
+                              用於水平居中。 -->
+                        <!-- 以下3個a標籤，包的是聊天視窗、購物車、會員登入的小icon -->
+                        <a href="#" class="d-flex align-items-center justify-content-center mr-1 icon">
+                            <img src="./images/header/chat_icon.png" />
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center mr-1 icon">
+                            <img src="./images/header/shopping_cart_Icon.png" />
+                        </a>
+                        <a href="./login.html" class="d-flex align-items-center justify-content-center mr-1 icon">
+                            <img src="./images/header/member_icon.png" />
+                        </a>
+                        <span class = "sname"></span>
+                    </p>
+                </div>
+                <!-- 這個button是漢堡選單的menu按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <!-- 以下為header各分區的標題連結 -->
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav d-flex align-items-center justify-content-center" style="gap: 1rem">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">首頁</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">找餐廳</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">找餐券</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">揪團</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">美食排行榜</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 以下為內容區域，主要對這裡做修改 -->
+    <form action="#" method="POST">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <aside class="aside">
+                        <div class="list-group">
+                            <a href="./usercenter.html" class="list-group-item list-group-item-action">會員中心</a>
+                            <a href="#" class="list-group-item list-group-item-action">預約紀錄</a>
+                            <a href="#" class="list-group-item list-group-item-action">訂閱餐廳</a>
+                            <a href="./friend.html" class="list-group-item list-group-item-action">好友中心</a>
+                            <a href="#" class="list-group-item list-group-item-action">餐券紀錄</a>
+                            <a href="#" class="list-group-item list-group-item-action">查看優惠卷</a>
+                            <a href="#" class="list-group-item list-group-item-action">揪團歷史</a>
+                            <button id="btnre" href="#" class="list-group-item list-group-item-action">登出</button>
+                        </div>
+                    </aside>
+                </div>
+
+                <div class="col-sm-9">
+                    <div class="">
+                        <div class="profile">
+<!--                             <form action="#" data-toggle="validator"> -->
+                                <h1 style="text-align: center;"> 會員資訊 </h1>
+
+<!--                                 <a href="" class="a_user  btn ">編輯會員資料</a> -->
+                                <a href="./changpassword.html" class="a_user  btn  ">修改密碼</a>
+                                <hr>
+                                <!-- pattern="^[A-Za-z0-9 @]+$" id="exampleInputEmail" aria-describedby="emailHelp"
+                                data-pattern-error="帳號只接受英文字母數字" -->
+                                <!-- 第一列 -->
+                                <div class="row">
+                                    <div class="col-6" id="cen">
+                                        <label class="userimg">一般會員</label>
+
+                                        <div id="preview"><span  class="text">上傳頭像</span>
+                                            <img id="userview" src="./images/header/logo2.png" style="width: 200px;">
+                                        </div>
+                                        <input type="file" name="photo" id="p_file">
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row" id="aaa"> 
+                                
+                                    <div class="col-sm-12">
+                                        <label>信箱</label>
+                                        <input id="userinputmail" name="inputmail" type="email" placeholder="帳號"   class="form-control"
+                                            autocomplete="#" required>
+                                        <div class="help-block with-errors"> </div>
+                                    </div>
+                                </div>
+                                <br>
+<!--                                 第二列 -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+
+                                        <label>姓名</label>
+                                        <input id="userinputname" type="text" placeholder="姓名" class="form-control"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+
+                                        <label>暱稱</label>
+                                        <input id="userinputnick" type="text" placeholder="姓名" class="form-control"
+                                            required>
+                                    </div>
+                                </div>
+                                <br>
+<!--                                  第三列 -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label>地址</label>
+                                        <input id="userinputadd" type="text" placeholder="輸入地址" class="form-control"
+                                            required>
+
+                                    </div>
+                                </div>
+
+                                <br>
+<!--                                 第四列 -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label>生日</label>
+                                        <input id="userinputbirth" type="date" placeholder="生日" class="form-control"
+                                            required>
+                                    </div>
+                                    <br>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label>性別</label>
+                                        <select id="userinputgender" class="form-select">
+                                            <option selected>請選擇</option>
+                                            <option value="1">男</option>
+                                            <option value="2">女</option>
+                                            <option>其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+<!--                                 第五列 -->
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <label>手機號碼</label>
+                                        <input id="userinputphone" type="number" placeholder="手機號碼" class="form-control"
+                                            pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+                                    </div>
+                                </div>
+                                <br>
+<!--                                 第六列 -->
+<!--                                  id="h" 為了讓高度縮小 -->
+                                <div class="row" id="h">
+
+                                    <label>自我簡介</label><br>
+                                    <div class="col-10">
+                                        <textarea id="usertextarea" name="mytext" rows="6" cols="40" required></textarea>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <button id="savbtn" type="button" value="儲存" class="btn btn-outline-warning"
+                                        style="background-color: #FFDEB9; color: white; border: 1px solid #FFDEB9; width: 100px; margin-left: 650px; ">儲存</button>
+
+                                </div>
+                                
+                                
+
+
+
+<!--                             </form> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+
+    <!-- class="navbar-fixed-bottom"讓footer置底 -->
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/header/logo2.png" class="logo2" />
+                </div>
+                <section class="footer_nav col-9">
+                    <div class="about_us">
+                        <span>About us</span>
+                        <ul class="footer_list">
+                            <li>
+                                <a href="#" class="facebook_icon"><img src="./images/header/facebook_icon.png" /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="logo-instagram"><img src="./images/header/logo-instagram.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col footer_ul">
+                        <ul class="">
+                            <li class=""><a href="#" class="">首頁</a></li>
+                            <li class="">
+                                <a href="#" class="">找餐廳</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="">找餐券</a>
+                            </li>
+                            <li class=""><a href="#" class="">揪團</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer_ul">
+                        <ul class="">
+                            <li class=""><a href="#" class="">首頁</a></li>
+                            <li class="">
+                                <a href="#" class="">找餐廳</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="">找餐券</a>
+                            </li>
+                            <li class=""><a href="#" class="">揪團</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer_ul">
+                        <ul class="">
+                            <li class=""><a href="#" class="">首頁</a></li>
+                            <li class="">
+                                <a href="#" class="">找餐廳</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="">找餐券</a>
+                            </li>
+                            <li class=""><a href="#" class="">揪團</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./vendors/jquery/moment.js"></script>
+    <script src="./js/header_js/profileimg.js"></script>
+    <script src="./js/header_js/remove.js"></script>
+</body>
+
+</html>

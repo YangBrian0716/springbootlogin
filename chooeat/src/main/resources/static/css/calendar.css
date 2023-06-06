@@ -1,0 +1,65 @@
+/* calendar 開始 */
+  
+body {
+    background-color:white;
+    }
+    
+    .container_calendar {
+    width: 800px;
+    height: 700px;
+    /* 置中 */
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-bottom: 0;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    margin-right:30px;
+    margin-bottom:30px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(81, 81, 81, 0.2);
+    }
+    
+    .fc .fc-toolbar-title {
+    color: wheat;
+    font-size: 20px;
+    }
+    
+    .fc th {
+    color: wheat;
+    font-size: 25px;
+    }
+    
+    @media (max-width:600px) {
+    .container {
+    width: 370px;
+    height: 600px;
+    }
+    .fc th {
+    color: wheat;
+    font-size: 18px;
+    }
+    .fc .fc-toolbar-title {
+    color: wheat;
+    font-size: 20px;
+    }
+    }
+    .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+        background-color: wheat;
+        border-color: #ad3a3a;
+        color: #fff;
+    }  
+    
+    .fc-col-header-cell-cushion{
+        background-color: wheat;
+        border-color:wheat;
+        color: #fff;
+        font-size: 20px;
+
+    }
+    a {
+      color:orange;
+      text-decoration: underline;
+  }
+    /* calendar結束 */

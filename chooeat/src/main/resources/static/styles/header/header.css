@@ -1,0 +1,34 @@
+header{
+    background-color: white;
+    /* 設定固定寬，在進行RWD設計之前不可移除，同樣設定會出現在內容區塊的DIV標籤及FOOTER */
+    width: 1200px;
+    margin: 0 auto;
+   
+    
+}
+
+header nav.navbar div.container div.collapse{
+    /* border: 1px solid green; */
+    margin: 20px;
+
+}
+
+header nav.navbar div.container a {
+    font-size: 1rem;
+    color: black;
+    /* border: 1px solid red; */
+
+}
+
+header nav.navbar div.container a:hover{
+    color: orange;
+    font-weight: 800;
+    
+}
+
+
+
+ a.icon{
+    /* border: 1px solid purple; */
+    margin-right: 10px !important;
+}

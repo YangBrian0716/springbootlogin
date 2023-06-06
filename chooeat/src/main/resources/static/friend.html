@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>CHOOEAT！</title>
+    <meta charset="utf-8" />
+    <link href="./images/header/logo2.png" rel="shortcut icon">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- 引入bootstrap jquery js-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- DataTable 連結 -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <!-- 引入Font Awesome 套件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+
+    <!-- 以下引入我們自己寫的css -->
+    <link rel="stylesheet" href="./styles/header/footer.css" />
+    <link rel="stylesheet" href="./styles/header/header.css" />
+    <link rel="stylesheet" href="./styles/all/all.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+</head>
+
+<body>
+    <header>
+        <!-- 設定導覽列標籤在桌機以上size展開 -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <!-- div class="container-fluid"置中且滿版 -->
+            <div class="container">
+                <!-- .navbar-brand 標示為公司，產品或專案名稱。
+              這裡放的是chooeat文字logo
+                      這裡的連結之後要改，跳轉到首頁
+                  內包超連結，超連結裡面包圖片，讓使用者點圖片跳轉 -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/header/logo.png" />
+                </a>
+                <!-- order-lg-last在bootstrap框架中是設定在父元素的排列順序，last的意思是會在最後面
+                      function_icons只代表這個class的名稱 -->
+                <div class="function_icons order-lg-last">
+                    <!-- "mb-0" 類用於指定此元素的外邊距（margin）為 0。 
+                      "d-flex" 類用於指定此元素為一個彈性盒子，即在此元素內部的所有子元素將以一個方向排列
+                      ，並且可以通過 justify-content 和 align-items 屬性來調整它們之間的間距和位置。 -->
+                    <p class="mb-0 d-flex">
+                        <!-- "d-flex" 類用於指定此元素為一個彈性盒子，它將允許 "align-items-center" 
+                              和 "justify-content-center" 屬性來垂直和水平居中其內部的子元素。 
+                              "align-items-center" 類用於垂直居中，"justify-content-center" 類
+                              用於水平居中。 -->
+                        <!-- 以下3個a標籤，包的是聊天視窗、購物車、會員登入的小icon -->
+                        <a href="#" class="d-flex align-items-center justify-content-center mr-1 icon">
+                            <img src="./images/header/chat_icon.png" />
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-center mr-1 icon">
+                            <img src="./images/header/shopping_cart_Icon.png" />
+                        </a>
+                        <a href="./login.html" class="d-flex align-items-center justify-content-center mr-1 icon">
+                            <img src="./images/header/member_icon.png" />
+                      
+                        </a>
+                    </p>
+                </div>
+                <!-- 這個button是漢堡選單的menu按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <!-- 以下為header各分區的標題連結 -->
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav d-flex align-items-center justify-content-center" style="gap: 1rem">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">首頁</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">找餐廳</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">找餐券</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">揪團</a></li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">美食排行榜</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">關於我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 以下為內容區域，主要對這裡做修改 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <aside class="aside">
+                    <div class="list-group">
+                        <a href="./usercenter.html" class="list-group-item list-group-item-action">編輯會員資料</a>
+                        <a href="#" class="list-group-item list-group-item-action">預約紀錄</a>
+                        <a href="#" class="list-group-item list-group-item-action">訂閱餐廳</a>
+                        <a href="./friend.html" class="list-group-item list-group-item-action">好友列表</a>
+                        <a href="#" class="list-group-item list-group-item-action">餐券紀錄</a>
+                        <a href="#" class="list-group-item list-group-item-action">查看優惠卷</a>
+                        <a href="#" class="list-group-item list-group-item-action">揪團歷史</a>
+                     <button id="btnre" href="#" class="list-group-item list-group-item-action">登出</button>
+                    </div>
+            </div>
+            </aside>
+            <div class="col-sm-9">
+                <div>
+                    <main>
+                        <div class="mb-3 bg-body-tertiary rounded-2">
+                            <div class="table-responsive scrollbar col-md-12 fs-6">
+
+                                <table id="myTable" class="table table-striped table-sm" style="width: 100%">
+
+                                    <thead>
+                                        <tr>
+                                            <th>好友名單</th>
+                                            <th>目前狀態</th>
+                                            <th>聊天</th>
+                                            <th>刪除</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <script src="./js/header_js/friend.js"></script>
+
+
+
+                    </main>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- class="navbar-fixed-bottom"讓footer置底 -->
+    <footer class="navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/header/logo2.png" class="logo2" />
+                </div>
+                <section class="footer_nav col-9">
+                    <div class="about_us">
+                        <span>About us</span>
+                        <ul class="footer_list">
+                            <li>
+                                <a href="#" class="facebook_icon"><img src="./images/header/facebook_icon.png" /></a>
+                            </li>
+                            <li>
+                                <a href="#" class="logo-instagram"><img src="./images/header/logo-instagram.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col footer_ul">
+                        <ul class="">
+                            <li class=""><a href="#" class="">首頁</a></li>
+                            <li class="">
+                                <a href="#" class="">找餐廳</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="">找餐券</a>
+                            </li>
+                            <li class=""><a href="#" class="">揪團</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer_ul">
+                        <ul class="">
+                            <li class=""><a href="#" class="">首頁</a></li>
+                            <li class="">
+                                <a href="#" class="">找餐廳</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="">找餐券</a>
+                            </li>
+                            <li class=""><a href="#" class="">揪團</a></li>
+                        </ul>
+                    </div>
+                    <div class="col footer_ul">
+                        <ul class="">
+                            <li class=""><a href="#" class="">首頁</a></li>
+                            <li class="">
+                                <a href="#" class="">找餐廳</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="">找餐券</a>
+                            </li>
+                            <li class=""><a href="#" class="">揪團</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+        <script src="./js/header_js/remove.js"></script>
+    
+</body>
+
+</html>

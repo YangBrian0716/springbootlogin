@@ -1,0 +1,17 @@
+
+*{
+    /* 頁面上所有元素，寬高從邊框開始算起 */
+    box-sizing: border-box;
+
+
+}
+
+div.main_content{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: 0 auto;
+    background-color: F5F5F5;
+}
+
+
+

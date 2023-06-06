@@ -1,0 +1,54 @@
+#verify_code {
+    position: relative;
+    text-align: center;
+
+
+}
+
+#reBtn {
+    position: relative;
+        
+    margin-bottom: 30px;
+    margin-left: 10px;
+ 
+    border-style: none;
+    border: none;
+    outline: none;
+    font-size: 20px;cursor: pointer;
+    background-color: #FFDEB9; 
+    color: white; 
+    border: 1px solid #FFDEB9;
+
+}
+
+/* 眼睛 */
+.form-group {
+    position: relative;
+}
+
+#checkEye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+#loginborder{
+     position: relative; 
+     display: flex; 
+     justify-content: flex-end; 
+     align-items: center; 
+     height: 100%;
+
+}
+#loginimg{
+   position: absolute;
+   right: 10%;  
+   transform: translateY(80%)scale(1); 
+}
+#result{
+    color:red; 
+}
+
+  
